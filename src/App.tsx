@@ -8,7 +8,7 @@ function App() {
         <div className="App">
             <AppTitle/>
             <Rating value={3}/>
-            <Accordion/>
+            <Accordion title={'Меню'}/>
             <Rating value={0}/>
             <Rating value={1}/>
             <Rating value={2}/>
