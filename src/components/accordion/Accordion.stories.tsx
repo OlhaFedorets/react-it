@@ -17,6 +17,6 @@ export const UsersUnCollapsedMode = () => <Accordion collapsed={false} onClick={
 
 export const ModeChanging = () => {
     const [value, setValue] = useState<boolean>(true);
-    return <Accordion collapsed={value} onClick={()=>setValue(!value)} title={'Changing mode'}/>
+    return <Accordion collapsed={value} onClick={()=>setValue(!value)} title={'Users'}/>
 }
 
