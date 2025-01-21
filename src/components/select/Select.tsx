@@ -26,13 +26,17 @@ export function Select(props: SelectPropsType) {
     return (
         <div className={styles.select}>
             {/*<div className={styles.select + ' ' + (active && styles.active)}> вариант отобразить active с помощью css*/}
-            <span className={styles.main} onClick={toggleItems}>{selectedItem && selectedItem.title}</span>
+            <span className={styles.main}
+                  onClick={toggleItems}>
+                {selectedItem && selectedItem.title}
+            </span>
             {
                 active &&
                 <div className={styles.items}>
                     {props.items.map(i =>
                         <div key={i.value}
-                             onClick={()=>onItemClick(i.value)}>
+                             className={styles.item + ' ' + (selectedItem === i ? styles.selected : '')}
+                             onClick={() => onItemClick(i.value)}>
                             {i.title}
                         </div>)}
                 </div>

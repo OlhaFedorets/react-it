@@ -15,3 +15,8 @@ border: 1px solid black;
 /*.select.active .items{*/
 /*    display: block;*/
 /*}*/
+
+.item.selected{
+    background-color: #2c2cbd;
+    color: white;
+}
