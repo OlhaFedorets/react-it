@@ -72,7 +72,7 @@ export const AccordionDemo = () => {
                       items={[
                           {title: 'Emma', value: 0},
                           {title: 'Rate', value: 1},
-                          {title: 'Boba', value: 2}
+                          {title: 'Bob', value: 2}
                       ]}
                       onClick={(id)=>{alert(`user with id ${id} should be happy`)}}
     />
