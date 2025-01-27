@@ -22,9 +22,6 @@ export const Example1 = () => {
     const [counter, setCounter] = useState(0);
     const [users, setUsers] = useState(['Bob', 'Ann', 'Den']);
 
-    const addUser = () => {
-
-    }
 
     return <>
         <button onClick={() => setCounter(counter + 1)}>+</button>
