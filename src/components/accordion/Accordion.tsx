@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import {string} from "prop-types";
 
 type ItemType = {
@@ -30,11 +30,13 @@ type AccordionTitlePropsType = {
     collapsed: boolean
 }
 
-function AccordionTitle(props: AccordionTitlePropsType) {
+const AccordionTitle = (props: AccordionTitlePropsType) => {
+    console.log('AccordionTitle')
     return (
         <h3 onClick={() => props.onChange(!props.collapsed)}>--{props.titleValue}--</h3>
     )
 }
+
 
 type AccordionBodyPropsType = {
     items: ItemType[]
