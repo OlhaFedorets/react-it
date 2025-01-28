@@ -19,10 +19,11 @@ export const Example1 = () => {
 
     const [counter, setCounter] = useState(generateData);
 
-    const changer = (state: number) => state + 1
+    // const changer = (state: number) => state + 1
 
     return <>
-        <button onClick={() => setCounter(changer)}>+</button>
+        {/*<button onClick={() => setCounter(changer)}>+</button>*/}
+        <button onClick={() => setCounter(state => {return state+1} )}>+</button>
         {counter}
     </>
 }
